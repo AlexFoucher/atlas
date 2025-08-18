@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Birdwatching</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <div class="flex-container">
+
+      <header role="banner" class="site-header">
+        <div class="brand">
+          <img class="logo" src="dove.png" alt="a simple dove logo" />
+          <h1>Birdwatching</h1>
+        </div>
+
+        <nav role="navigation" aria-label="Primary" class="primary-nav">
+          <ul>
+            <li><a aria-current="page" href="#">Home</a></li>
+            <li><a href="#">Get started</a></li>
+            <li><a href="#">Photos</a></li>
+            <li><a href="#">Gear</a></li>
+            <li><a href="#">Forum</a></li>
+          </ul>
+        </nav>
+      </header>
+
+
+      <main id="main" role="main" class="content">
+        <article aria-labelledby="welcome-heading">
+          <h2 id="welcome-heading">Welcome</h2>
+          <p>
+            Welcome to our fake birdwatching site. If this were a real site,
+            it would be the place to learn more about birdwatching, whether you
+            are a beginner looking to get into birding or an expert wanting to
+            share ideas, tips and photos with other like minded people.
+          </p>
+
+          <section aria-labelledby="getting-started">
+            <h3 id="getting-started">Getting started</h3>
+            <p>New here? Read our quick-start guide, pick a local park, and grab a simple pair of binoculars. You will be surprised by how many species you can spot in one afternoon.</p>
+          </section>
+
+          <section aria-labelledby="ethics">
+            <h3 id="ethics">Birdwatching ethics</h3>
+            <p>Respect wildlife and other people. Keep your distance, do not disturb nests, and leave the habitat as you found it.</p>
+          </section>
+        </article>
+      </main>
+
+      <aside role="complementary" aria-labelledby="fave-photos" class="sidebar">
+        <h2 id="fave-photos">Favourite photos</h2>
+        <p>North American birds</p>
+
+        <ul class="thumbs">
+          <li>
+            <a href="favorite-1.jpg">
+              <img src="favorite-1_th.jpg" alt="Small black bird with long slender beak. Opens larger image." />
+            </a>
+          </li>
+          <li>
+            <a href="favorite-2.jpg">
+              <img src="favorite-2_th.jpg" alt="Brown bird perched on a branch. Opens larger image." />
+            </a>
+          </li>
+          <li>
+            <a href="favorite-3.jpg">
+              <img src="favorite-3_th.jpg" alt="Blue bird in flight. Opens larger image." />
+            </a>
+          </li>
+          <li>
+            <a href="favorite-4.jpg">
+              <img src="favorite-4_th.jpg" alt="Large white bird with black plumage on the back. Opens larger image." />
+            </a>
+          </li>
+        </ul>
+      </aside>
+
+      <footer role="contentinfo" class="site-footer">
+        <p>&copy; Chris Mills, 2016. CC0. Example code adapted for class.</p>
+      </footer>
+    </div>
+  </body>
+</html>

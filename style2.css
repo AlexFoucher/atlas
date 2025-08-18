@@ -1,0 +1,144 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans Condensed", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-link:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 1rem;
+  outline: 2px solid;
+  background: white;
+}
+
+.flex-container {
+  background-color: rgba(0, 255, 0, 0.5); /* per assignment */
+  padding: 1%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 900px) {
+  .flex-container {
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "header header"
+      "content sidebar"
+      "footer footer";
+  }
+}
+
+.site-header {
+  grid-area: header;
+  background: #e6ffe6;
+  padding: 1rem;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Sonsie One", cursive;
+  letter-spacing: 1px;
+}
+
+
+.primary-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.primary-nav a {
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.primary-nav a:focus,
+.primary-nav a:hover,
+.primary-nav a[aria-current="page"] {
+  outline: 2px solid;
+}
+
+
+.content {
+  grid-area: content;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+  min-height: 300px;
+}
+
+.content h2 {
+  margin-top: 0;
+}
+
+
+.sidebar {
+  grid-area: sidebar;
+  background: #f7fff7;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.thumbs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.thumbs img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.site-footer {
+  grid-area: footer;
+  background: #e6ffe6;
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+
+a:focus {
+  outline: 2px solid;
+  outline-offset: 2px;
+}
